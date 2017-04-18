@@ -1,0 +1,16 @@
+{{define "my_checks"}}
+
+{{template "header"}}
+
+<h1>Hello World</h1>
+
+<ul>
+{{range .Checks}}
+    <li>{{ . }}</li>
+{{end}}
+</ul>
+
+<form action="/checks/add/" method="post">
+    <input type="submit" value="Add Check">
+</form>
+{{end}}

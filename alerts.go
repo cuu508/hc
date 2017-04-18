@@ -1,4 +1,4 @@
-package main
+package hc
 
 import (
     "fmt"
@@ -41,7 +41,7 @@ func process() {
     }
 }
 
-func main() {
+func Send() {
     var err error
     conn, err = redis.Dial("tcp", ":6379")
     if err != nil {

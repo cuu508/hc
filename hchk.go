@@ -1,4 +1,4 @@
-package main
+package hc
 
 import (
     "fmt"
@@ -63,7 +63,7 @@ func httpHandler(w http.ResponseWriter, r *http.Request) {
     io.WriteString(w, "OK")
 }
 
-func main() {
+func ServeHchk() {
     client = redis.NewClient(&redis.Options{
         Addr:     "localhost:6379",
         Password: "",
